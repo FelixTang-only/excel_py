@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 import daily_news_email as news
 
 
-SAMPLE_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
+SAMPLE_RSS = """<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Sample News</title>
@@ -20,7 +20,7 @@ SAMPLE_RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
     </item>
   </channel>
 </rss>
-"""
+""".encode("utf-8")
 
 
 class DailyNewsEmailTests(unittest.TestCase):
