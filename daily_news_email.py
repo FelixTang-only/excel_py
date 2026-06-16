@@ -130,6 +130,7 @@ def strip_html(value: str) -> str:
     value = re.sub(r"(?s)<[^>]+>", " ", value)
     value = html.unescape(value)
     value = re.sub(r"\s+", " ", value)
+    value = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])", "", value)
     return value.strip()
 
 
