@@ -30,4 +30,4 @@ jobs:
           python-version: "3.11"
 
       - name: Send AI, US stocks and World Cup emails
-        run: python daily_news_email.py
+        run: python3 daily_news_email.py

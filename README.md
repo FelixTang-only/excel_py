@@ -30,15 +30,15 @@
 只抓取新闻并预览文本，不发送邮件：
 
 ```bash
-python daily_news_email.py --dry-run
+python3 daily_news_email.py --dry-run
 ```
 
 只验证某一类新闻：
 
 ```bash
-python daily_news_email.py --dry-run --category ai
-python daily_news_email.py --dry-run --category us_stocks
-python daily_news_email.py --dry-run --category world_cup
+python3 daily_news_email.py --dry-run --category ai
+python3 daily_news_email.py --dry-run --category us_stocks
+python3 daily_news_email.py --dry-run --category world_cup
 ```
 
 正式发送时需先在环境变量中提供 SMTP 配置。
