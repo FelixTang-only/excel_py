@@ -9,7 +9,7 @@ from daily_news_email import (
 )
 
 
-SAMPLE_RSS = b"""\
+SAMPLE_RSS = """\
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
@@ -28,7 +28,7 @@ SAMPLE_RSS = b"""\
     </item>
   </channel>
 </rss>
-"""
+""".encode("utf-8")
 
 
 class DailyNewsEmailTest(unittest.TestCase):
