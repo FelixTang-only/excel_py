@@ -28,5 +28,5 @@ Secrets：
 本地预览可运行：
 
 ```bash
-python daily_news_email.py --dry-run
+python3 daily_news_email.py --dry-run
 ```
